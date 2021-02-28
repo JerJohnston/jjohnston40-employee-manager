@@ -7,6 +7,10 @@
     "server": "nodemon server/index.js --watch ./server",
     "start": "node server/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JerJohnston/jjohnston40-employee-manager"
+  },
   "author": "J Johnston",
   "license": "MIT",
   "dependencies": {
