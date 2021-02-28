@@ -11,29 +11,33 @@
 <body>
     <nav class="site-nav">
         <ul class="nav-menu">
-            <li><a href="index.html">home</a></li>
-            <li><a href="login.html">account login</a></li>
+            <li class="nav-links">
+                <a href="index.html">home</a><span>|</span>
+                <a href="users.html">users</a>
+            </li>
+            <li><a href="login">account login</a></li>
         </ul>
     </nav>
     <aside class="sign-up-form">
         <h1>Sign Up For A Free Trial</h1>
-        <form id="signup">
+        <form id="signup" action="/signup" method="POST">
             <div class="form-control">
-                <label for="name">Please enter your full name</label>
-                <input type="text" name="name">
+                <label for="name">Please enter your full name </label>
+                <input type="text" name="name" id="name" required>
             </div>
             <div class="form-control">
-                <label for="email">Enter a valid email address</label>
-                <input type="text" name="email">
+                <label for="email">Enter a valid email address </label>
+                <input type="email" name="email" id="email" required>
             </div>
             <div class="form-control">
-                <label for="password">Enter a secure password</label>
-                <input type="password" name="password">
+                <label for="password">Enter a secure password </label>
+                <input type="password" name="password" id="password" required>
             </div>
             <div class="form-control">
                 <input type="submit" value="Create Account">
             </div>
         </form>
     </aside>
+    
 </body>
 </html>
