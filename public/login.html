@@ -1,1 +1,35 @@
-<h1>log in</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Force | Log In</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="site-nav">
+        <ul class="nav-menu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="login.html">account login</a></li>
+        </ul>
+    </nav>
+    <aside class="login-form">
+        <h1>Log In to your Account</h1>
+        <form method="post" id="login" action="/login">
+            <div class="form-control">
+                <label for="email">Enter Email <span class="warning">warning</span></label>
+                <input type="text" name="email" placeholer="youremail@email.com">
+            </div>
+            <div class="form-control">
+                <label for="password">Enter Password <span class="warning">warning</span></label>
+                <input type="password" name="password" placeholer="password here">
+            </div>
+            <div class="form-control">
+                <input type="submit" value="login">
+            </div>
+        </form>
+    </aside>
+</body>
+</html>

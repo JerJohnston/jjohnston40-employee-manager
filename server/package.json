@@ -4,7 +4,8 @@
   "description": "Employee Service API",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon --watch index.js",
+    "server": "nodemon server/index.js --watch ./server",
+    "start": "node server/index.js",
     "build": "echo build"
   },
   "author": "J Johnston",

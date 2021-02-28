@@ -10,9 +10,10 @@
         const PORT = process.env.PORT || 3000;
         const app = express();
 
-        console.log(process.env.PORT);
+        // Read HTTP POST Request Message Body
     
-  
+        app.use(express.urlencoded( {extended:true} ));
+        app.use(express.json());
 
         // setting up static files to server 
 
@@ -23,8 +24,12 @@
 
         app.use(express.static(path.join(__dirname, '../public'), options));
 
+        app.post('/login', (req, res)=> {
+            console.log(req.body);
+            res.send("login")
+        })
 
-        // MIDDLE WARE
+      
 
         app.get('/api/v1/employees', (req, res)=>{
             res.send('EMPLOYEE MANAGER API');
